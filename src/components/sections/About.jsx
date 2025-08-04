@@ -16,7 +16,7 @@ export const About = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="rounded-xl p-8 border-white/10 border-5 hover:-translate-y-1 transition-all bg-gradient-to-b from-orange-700 to-orange-500">
                         <h1 className="font-bold text-3xl pb-2">Workshops</h1>
-                        <p>We run data science workshops.</p>
+                        <p>We host data science workshops that get people building real world projects</p>
                     </div>
 
                     <div className="rounded-xl p-8 border-white/10 border-5 hover:-translate-y-1 transition-all bg-gradient-to-b from-orange-700 to-orange-500">
