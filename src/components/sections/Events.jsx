@@ -13,6 +13,9 @@ export const Events = () =>{
                     plugins={[dayGridPlugin]}
                     initialView="dayGridMonth"
                     height="auto"
+                    eventColor= '#F97316'
+                    
+                    
                     events={[
                         {title:'Data Exploration & EDA Workshop', date: '2025-09-10'},
                         {title:'Python Data Automation Challange', date: '2025-09-24'},
@@ -20,6 +23,7 @@ export const Events = () =>{
                         {title:'Production Workshop', date: '2025-11-12'},
                         {title:'Power BI Report Competition', date: '2025-11-26'}
                     ]}
+                    
             
             />
 
