@@ -1,13 +1,16 @@
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from '@fullcalendar/daygrid'
+import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Events = () =>{
-    return(<section id="events" className="py-12">
+    return(
+    <RevealOnScroll>
+    <section id="events" className="py-12">
         
         <div className="max-w-5xl mx-auto px-4">
             <h1 className="text-center font-bold text-5xl">Events</h1>
             
-            <div className="rounded-xl text-white">
+            <div className="rounded-xl">
                 <FullCalendar 
 
                     plugins={[dayGridPlugin]}
@@ -35,6 +38,7 @@ export const Events = () =>{
         </div>
 
     </section>
+    </RevealOnScroll>
 
     );
 }

@@ -4,11 +4,15 @@ import img_james from '../../assets/img_james.jpg'
 import img_jaden from '../../assets/img_jaden.jpg'
 import img_noah from '../../assets/img_noah.jpg'
 import img_raveena from '../../assets/img_raveena.jpg'
+import img_kai from '../../assets/img_kai.jpeg'
+import {RevealOnScroll} from '../RevealOnScroll'
 
 export const About = () => {
 
     return(
+        <RevealOnScroll>
         <section id="about" className="min-h-screen flex items-center justify-content">
+            
             <div className="max-w-5xl mx-auto px-4 text-center">
                 <h1 className="text-white font-bold text-5xl pb-7">ABOUT</h1>
                 <p className="text-white text-2xl pb-7">Bridging the gap between academia and industry</p>
@@ -58,10 +62,15 @@ export const About = () => {
                             <h1 className="font-bold text-3xl pb-2">Raveena Kumar</h1>
                             <p>VP Events</p>
                         </div>
+                        <div className="rounded-xl p-8 border-white/10 border-5 hover:-translate-y-1 transition-all bg-gradient-to-b from-orange-700 to-orange-500">
+                            <img src={img_kai} className='rounded-full'/>
+                            <h1 className="font-bold text-3xl pb-2">Kaileigh Gilbert</h1>
+                            <p>VP Internal</p>
+                        </div>
 
                         <div className="rounded-xl p-8 border-white/10 border-5 hover:-translate-y-1 transition-all bg-gradient-to-b from-orange-700 to-orange-500">
-                            <img src={img_noah} className='rounded-full'/>
-                            <h1 className="font-bold text-3xl pb-2">Noah Guttaman</h1>
+                            
+                            <h1 className="font-bold text-3xl pb-2">N/A</h1>
                             <p>Chairman</p>
                         </div>
 
@@ -72,6 +81,8 @@ export const About = () => {
 
 
             </div>
+        
         </section>
+        </RevealOnScroll>
     )
 }
